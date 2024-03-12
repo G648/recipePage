@@ -1,0 +1,187 @@
+/* reset de página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Outfit;
+    src: url(../assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: YoungSerif;
+    src: url(../assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+/* variáveis CSS */
+:root {
+    --Nutmeg: hsl(14, 45%, 36%);
+    --DarkRespberry: hsl(332, 51%, 32%);
+    --White: hsl(0, 0%, 100%);
+    --RoseWhite: hsl(330, 100%, 98%);
+    --Eggshell: hsl(30, 54%, 90%);
+    --LightGrey: hsl(30, 18%, 87%);
+    --WengeBrown: hsl(30, 10%, 34%);
+    --DarkCharcoal: hsl(24, 5%, 18%);
+
+    --TitleFont: YoungSerif;
+    --ParagrafFont: Outfit;
+}
+
+body {
+    background-color: var(--Eggshell);
+}
+
+.container-project {
+    background-color: var(--White);
+    width: 60vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 50%;
+}
+
+img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.container-project__h1 {
+    font-family: var(--TitleFont);
+    color: black;
+    letter-spacing: 1px;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.container-project>p {
+    font-family: var(--ParagrafFont);
+    font-weight: 250;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.first-list__style {
+    background-color: var(--RoseWhite);
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.first-list__style>h3 {
+    color: var(--DarkRespberry);
+    font-family: var(--ParagrafFont);
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+ul {
+    margin-left: 16px;
+    font-family: var(--ParagrafFont);
+    color: var(--WengeBrown);
+    letter-spacing: 1px;
+}
+
+ul>li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+}
+
+li::marker {
+    color: var(--DarkRespberry);
+}
+
+/* estilização da 2 lista usando handshort */
+.second-list__style {
+    margin: 25px 0 20px 0;
+}
+
+h1 {
+    font-family: var(--TitleFont);
+    letter-spacing: 1px;
+    font-size: 1.8rem;
+    font-weight: 200;
+    color: var(--Nutmeg);
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.second-list__style>ul>li::marker {
+    color: var(--Nutmeg);
+}
+
+/* border -> shorthand */
+hr {
+    border: 1px solid var(--Nutmeg);
+}
+
+.third-list__style {
+    margin: 25px 0 20px 0;
+}
+
+ol {
+    margin-left: 30px;
+    font-family: var(--ParagrafFont);
+    color: var(--WengeBrown);
+    letter-spacing: 1px;
+}
+
+ol>li {
+    margin-bottom: 15px;
+    list-style-type: var(--DarkCharcoal);
+    padding-left: 15px;
+}
+
+.third-list__style>ol>li::marker {
+    color: var(--Nutmeg);
+    font-weight: 600;
+}
+
+.fourth-list__style>p {
+    font-family: var(--ParagrafFont);
+    color: var(--Nutmeg);
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border-bottom: 1px solid var(--Nutmeg);
+    padding: 15px;
+}
+
+/* células ímpares */
+td:nth-of-type(odd) {
+    color: var(--DarkRespberry);
+    font-family: var(--ParagrafFont);
+    font-weight: 400;
+}
+
+td:nth-of-type(even) {
+    color: var(--DarkRespberry);
+    font-family: var(--ParagrafFont);
+    font-weight: 800;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+.attribution {
+    font-size: 1rem;
+    text-align: center;
+    font-family: var(--ParagrafFont);
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
